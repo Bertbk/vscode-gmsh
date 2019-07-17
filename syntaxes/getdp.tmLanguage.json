@@ -1,0 +1,51 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "source.pro",
+	"patterns": [
+		{"include": "#comments"}, {"include": "#keywords"},	{"include":"#strings"}
+	],
+	"repository": {
+		"comments": {
+			"comment": "// comment",
+			"patterns": [{
+					"name": "comment.line.getdp",
+					"match": "//.*"
+				},
+				{
+					"name": "comment.block.getdp",
+					"begin": "/\\*",
+					"end": "\\*/",
+					"patterns": [{}]
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [{"include": "#control"}, {"include": "#block"}, {"include": "#function"}
+			]
+		},
+		"control": {
+				"name": "keyword.control.getdp",
+				"match": "\\b(Include|For|If|Else|While|In|EndFor|EndWhile|EndIf|Else|ElseIf)\\b"
+			},
+			"block":
+			{
+				"name": "keyword.block.getdp",
+				"match": "\\b(Group|Function|FunctionSpace|Formulation|Resolution|PostProcessing|PostOperation)\\b"
+			},
+		"function": {
+				"name": "keyword.function.getdp",
+				"match": "\\b(Complex, Vector, XYZ, X, Y, Z, AcousticFieldSoftCylinder, Cos, Sin, Tan, ATan, Abs,)\\b"
+		},
+		"strings": {
+			"name": "string.quoted.double.getdp",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.getdp",
+					"match": "\\\\."
+				}
+			]
+		}
+	}
+}

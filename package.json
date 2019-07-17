@@ -1,0 +1,25 @@
+{
+    "name": "getdp",
+    "displayName": "getdp",
+    "description": "GetDP language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "getdp",
+            "aliases": ["GetDP", "getdp"],
+            "extensions": [".pro"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "getdp",
+            "scopeName": "source.pro",
+            "path": "./syntaxes/getdp.tmLanguage.json"
+        }]
+    }
+}
