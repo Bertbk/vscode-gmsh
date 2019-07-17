@@ -20,31 +20,13 @@
 			]
 		},
 		"keywords": {
-			"patterns": [{"include": "#control"}, {"include": "#entity"}, {"include": "#small_entity"}, {"include": "#MathFunction"}, {"include": "#typeforobjects"}, {"include":"#prefix"}
+			"patterns": [{"include": "#control"}
 			]
 		},
 		"control": {
 				"name": "keyword.control.gmsh",
 				"match": "\\b(Include|For|If|Else|While|In|EndFor|EndWhile|EndIf|Else|ElseIf)\\b"
 			},
-		"entity":
-			{
-				"name": "entity.name.tag.gmsh",
-				"match": "\\b(Group|Constraint|Function|FunctionSpace|Formulation|Resolution|PostProcessing|PostOperation)\\b"
-			},
-		"small_entity":
-			{
-				"name": "entity.name.tag.gmsh",
-				"match": "\\b(Case|Quantity|Equation|Galerkin|System|Operation|BasisFunction)\\b"
-			},
-		"typeforobjects": {
-				"name": "keyword.other.math.gmsh",
-				"match": "\\b(Region|Global|NodesOf|EdgesOf|FacetsOf|VolumesOf|ElementsOf|GroupsOfNodesOf|GroupsOfEdgesOf|GroupsOfEdgesOnNodesOf|GroupOfRegionsOf|EdgesOfTreeIn|FacetsOfTreeIn|DualNodesOf|DualEdgesOf|DualFacetsOf|DualVolumesOf|Exp|Log|Log10|Sqrt|Sin|Asin|Cos|Acos|Tan|Atan|Atan2|Sinh|Cosh|Tanh|TanhC2|Fabs|Abs|Floor|Ceil|Fmod|Min|Max|Sign|Jn|dJn|Yn|dYn|Cross|Hypot|Norm|SquNorm|Unit|Transpose|Inv|Det|Rotate|TTrace|Cos_wt_p|Sin_wt_p|Period|Interval|Laplace|GradLaplace|Helmholtz|GradHelmholtz|Complex|Complex_MH|Re|Im|Conj|Cart2Pol|Vector|Tensor|TensorV|TensorSym|TensorDiag|SquDyadicProduct|CompX|CompY|CompZ|CompXX|CompXY|CompXZ|CompYX|CompYY|CompYZ|CompZX|CompZY|CompZZ|Cart2Sph|Cart2Cyl|UnitVectorX|UnitVectorY|UnitVectorZ|X|Y|Z|XYZ|Printf|Rand|Normal|NormalSource|Tangent|TangentSource|ElementVol|SurfaceArea|GetVolume|CompElementNum|GetNumElements|ElementNum|QuadraturePointIndex|AtIndex|InterpolationLinear|dInterpolationLinear|InterpolationBilinear|dInterpolationBilinear|InterpolationAkima|dInterpolationAkima|Order|Field|Field|ScalarField|VectorField|TensorField|ComplexScalarField|ComplexVectorField|ComplexTensorField|GetCpuTime|GetWallClockTime|GetMemory|SetNumberRunTime|GetNumberRunTime|SetVariable|GetVariable|ValueFromIndex|VectorFromIndex|ValueFromTable|Assign|Init|AssignFromResolution|InitFromResolution|Network|Link|LinkCplx|Form0|Form1|Form2|Form3|Form1P|Form2P|Scalar|Vector|BF_Node|BF_Edge|BF_Facet|BF_Volume|BF_GradNode|BF_CurlEdge|BF_DivFacet|BF_GroupOfNodes|BF_GradGroupOfNodes|BF_GroupOfEdges|BF_CurlGroupOfEdges|BF_PerpendicularEdge|BF_CurlPerpendicularEdge|BF_GroupOfPerpendicularEdge|BF_CurlGroupOfPerpendicularEdge|BF_PerpendicularFacet|BF_DivPerpendicularFacet|BF_Region|BF_RegionX|BF_RegionY|BF_RegionZ|BF_Global|BF_dGlobal|BF_NodeX|BF_NodeY|BF_NodeZ|BF_Zero|BF_One|AliasOf|AssociatedWith|Vol|Sur|Lin|VolAxi|SurAxi|VolAxiSqu|VolSphShell|VolCylShell|VolAxiSphShell|VolAxiSquSphShell|VolRectShell|VolAxiRectShell|VolAxiSquRectShell|Gauss|GaussLegendre|Line|Triangle|Quadrangle|Tetrahedron|Hexahedron|Prism|Pyramid|Point|FemEquation|Integral|deRham|Local|Global|Integral|Dt|DtDof|DtDt|DtDtDof|Eig|JacNL|DtDofJacNL|NeverDt|Generate|Solve|SolveAgain|SetGlobalSolverOptions|GenerateJac|SolveJac|GenerateSeparate|GenerateOnly|GenerateOnlyJac|GenerateGroup|GenerateRightHandSideGroup|Update|Update|UpdateConstraint|GetResidual|GetNormSolution | GetNormRightHandSide | GetNormResidual | GetNormIncrement|SwapSolutionAndResidual|SwapSolutionAndRightHandSide|InitSolution|InitSolution1|CreateSolution|CreateSolution|Apply|SetSolutionAsRightHandSide|SetRightHandSideAsSolution|Residual|CopySolution|CopySolution|CopyRightHandSide|CopyRightHandSide|CopyResidual|CopyResidual|SaveSolution|SaveSolutions|RemoveLastSolution|TransferSolution|TransferInitSolution|Evaluate|SetTime|SetTimeStep|SetDTime|SetFrequency|SystemCommand|Error|Test|Test|While|Break|Sleep|SetExtrapolationOrder|Print|Print|EigenSolve|Lanczos|FourierTransform|TimeLoopTheta|TimeLoopNewmark|TimeLoopAdaptive|IterativeLoop|IterativeLoopN|IterativeLinearSolver|PostOperation|GmshRead|GmshRead|GmshWrite|GmshClearAll|DeleteFile|RenameFile|CreateDir | CreateDirectory|MPI_SetCommSelf|MPI_SetCommWorld|MPI_Barrier|MPI_BroadcastFields|MPI_BroadcastVariables|Local|Integral|OnElementsOf|OnRegion|OnGlobal|OnSection|OnGrid|OnGrid|OnPoint|OnLine|OnPUpdateConne|OnBox|File|File|File|AppendToExistingFile|Label|Depth|AtGaussPoints|Skin|Smoothing|HarmonicToTUpdateCone|Dimension|TimeStep|TimeValue|TimeImagValue|LastTimeStepOnly|AppendExpressionToFileName|AppendExpressioUpdateConormat|AppendTimeStepToFileName|AppendStringToFileName|OverrideTimeStepValue|NoMesh|SendToServer|SendToSeUpdateConer|Color|Hidden|Closed|Units|Frequency|Format|Adapt|Target|Value|Sort|Iso|Iso|NoNewLine|ChangeOfCoordiUpdateContes|ChangeOfValues|DecomposeInSimplex|StoreInVariable|StoreInRegister|StoreMinInRegister|StoUpdateConMaxInRegister|StoreMinXinRegister|StoreMinYinRegister|StoreMinZinRegister|StoreMaxXinRegister|StoreMaxYinRegister|StoreMaxZinRegister|StoreInField|StoreInMeshBasedField|TimeLegend|FrequencyLegend|EigenvalueLegend|Gmsh|GmshParsed|Table|SimpleTable|TimeTable|NodeTable|ElementTable|Gnuplot|Adaptation|GenerateRHSGroup|All)\\b"
-		},
-		"prefix": {
-			"name": "entity.name.type.gmsh",
-			"match": "\\b(OnOneSideOf|Entity|Support|Jacobian|Integration|Type|Name|NameOfFormulation|NameOfCoef)\\b"
-		},
 		"strings": {
 			"name": "string.quoted.double.gmsh",
 			"begin": "\"",
