@@ -1,7 +1,7 @@
 {
-    "name": "getdp",
-    "displayName": "getdp",
-    "description": "GetDP language",
+    "name": "gmsh",
+    "displayName": "gmsh",
+    "description": "GMSH language",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.36.0"
@@ -11,15 +11,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "getdp",
-            "aliases": ["GetDP", "getdp"],
-            "extensions": [".pro"],
+            "id": "gmsh",
+            "aliases": ["GMSH", "gmsh"],
+            "extensions": [".geo"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "getdp",
-            "scopeName": "source.pro",
-            "path": "./syntaxes/getdp.tmLanguage.json"
+            "language": "gmsh",
+            "scopeName": "source.geo",
+            "path": "./syntaxes/gmsh.tmLanguage.json"
         }]
     }
 }
