@@ -14,7 +14,7 @@ git clone git@github.com:Bertbk/vscode-gmsh.git
 - Color syntaxing for GMSH `.geo` file
 - Automate indent
 
-![Screenshot](https://github.com/Bertbk/vscode-gmsh/blob/master/img/screen.png)
+![Screenshot](https://github.com/Bertbk/vscode-gmsh/blob/master/img/screen.gif)
 
 ## Known Issues / Future work
 
