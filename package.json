@@ -1,8 +1,16 @@
 {
-    "name": "gmsh",
-    "displayName": "gmsh",
-    "description": "GMSH language",
+    "author": "Bertrand Thierry <bthierry@math.cnrs.fr>",
+    "bugs": {
+        "url": "https://github.com/Bertbk/vscode-gmsh/issues/"
+      },
+    "name": "vscode-gmsh",
+    "displayName": "vscode-gmsh",
+    "description": "GMSH language support in Visual Studio Code",
     "version": "0.0.1",
+    "keywords": [
+        "gmsh",
+        "language"
+    ],
     "engines": {
         "vscode": "^1.36.0"
     },
@@ -21,5 +29,12 @@
             "scopeName": "source.geo",
             "path": "./syntaxes/gmsh.tmLanguage.json"
         }]
+    },
+    "homepage": "https://gmsh.info/",
+    "license": "MIT",
+    "publisher": "Bertrand Thierry",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Bertbk/vscode-gmsh.git"
     }
 }
