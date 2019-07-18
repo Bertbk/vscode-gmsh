@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"scopeName": "source.pro",
+	"scopeName": "source.geo",
 	"patterns": [
 		{"include": "#comments"}, {"include": "#keywords"},	{"include":"#strings"}
 	],
