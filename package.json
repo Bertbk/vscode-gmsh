@@ -33,7 +33,7 @@
     "icon": "logos/gmsh-logo.png",
     "homepage": "https://gmsh.info/",
     "license": "MIT",
-    "publisher": "Bertrand Thierry",
+    "publisher": "Bertrand-Thierry",
     "repository": {
         "type": "git",
         "url": "https://github.com/Bertbk/vscode-gmsh.git"
