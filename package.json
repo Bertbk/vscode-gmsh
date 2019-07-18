@@ -30,6 +30,7 @@
             "path": "./syntaxes/gmsh.tmLanguage.json"
         }]
     },
+    "icon": "logos/gmsh-logo.png",
     "homepage": "https://gmsh.info/",
     "license": "MIT",
     "publisher": "Bertrand Thierry",
