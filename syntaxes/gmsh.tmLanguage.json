@@ -66,11 +66,11 @@
 				},
 				{
 					"name" : "keyword.gmsh",
-					"match": "\\b(Pi|GMSH_MAJOR_VERSION|GMSH_MINOR_VERSION|GMSH_PATCH_VERSION|MPI_Size|MPI_Rank|Cpu|Memory|TotalMemory|newp|newl|news|newv|newll|newsl|newreg)\\b"
+					"match": "\\b(Pi|GMSH_MAJOR_VERSION|GMSH_MINOR_VERSION|GMSH_PATCH_VERSION|MPI_Size|MPI_Rank|Cpu|Memory|TotalMemory|newp|newl|news|newv|newll|newsl|newreg|Exit)\\b"
 				},
 				{
 					"name" : "keyword.gmsh",
-					"match": "\\b(SetFactory|BooleanIntersection|BooleanUnion|BooleanDifference|BooleanFragments)\\b"
+					"match": "\\b(SetFactory|BooleanIntersection|BooleanUnion|BooleanDifference|BooleanFragments|Delete)\\b"
 				},
 				{
 					"name": "keyword.gmsh",
