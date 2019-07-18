@@ -1,20 +1,11 @@
 # Gmsh Language for VS-Code
 
-## Install
-
-Clone this repo into `~/.vscode/extensions/` and relaunch VSCode:
-
-```
-cd ~/.vscode/extensions/
-git clone git@github.com:Bertbk/vscode-gmsh.git
-```
-
 ## Features
 
 - Color syntaxing for GMSH `.geo` file
 - Automate indent
 
-![Screenshot](https://github.com/Bertbk/vscode-gmsh/blob/master/img/screen.gif)
+![Screenshot](https://github.com/Bertbk/vscode-gmsh/raw/master/img/screen.gif)
 
 ## Known Issues / Future work
 
@@ -23,3 +14,6 @@ git clone git@github.com:Bertbk/vscode-gmsh.git
 - Probably missing some keywords
 - Lots of other stuff
 
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
